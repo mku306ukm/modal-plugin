@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        $('#mymodal').on('shown.bs.modal',function(){
+            alert('shown');
+        })
+        $('#mymodal').on('show.bs.modal',function(){
+            alert('show');
+        })
+        $('#mymodal').on('hide.bs.modal',function(){
+            alert('hide');
+        })
+        $('#mymodal').on('hidden.bs.modal',function(){
+            alert('hidden');
+        })
+        $('#mymodal').on('hideprevented.bs.modal',function(){
+            alert('prevented');
+        })
+    });
+</script>
+
+  </head>
+  <body>
+
+    <div class="container">
+        <h2 class="py-3 text-center">bootstrap modal</h2>
+        <div class="row py-3 justify-content-center">
+            <div class="col-md-3">
+                <button class="btn btn-primary" data-toggle="modal"
+                data-target="#mymodal">launch model</button>
+
+            <div class="modal fade" id="mymodal" data-backdrop="static" >
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title justify-content-center ">modal title</h5>
+                            <button class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body ">
+                            <p class="px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quibusdam quisquam veritatis temporibus, quae, nesciunt at excepturi rerum autem modi molestiae odit quam eos laboriosam nobis corporis nihil cumque. Quis dignissimos explicabo distinctio aperiam saepe exercitationem, in possimus quisquam error neque alias officiis harum, totam reiciendis a dicta ratione enim officia accusamus nam nisi obcaecati quo repellat animi! Eveniet explicabo id deserunt rerum, odit ea, sunt rem, aut sequi eligendi error mollitia amet provident at quas quis doloremque architecto perferendis et similique pariatur laborum? Odit necessitatibus deserunt sequi non tempore quasi eaque nobis corporis sit minima, dolore dolores laboriosam dolorum, suscipit nulla repudiandae rerum? Dolorem ipsum ducimus, dolor magni amet vero saepe exercitationem excepturi aliquid corporis nemo quidem sint mollitia quae soluta, vitae optio consequatu Dolore fugiat ea ab repudiandae non, impedit aliquam. Nobis reprehenderit optio, fuga excepturi, totam nemo voluptas molestias perferendis, inventore tempore dolorum repudiandae esse? Maxime dicta unde iste, aspernatur ducimus cupiditate sint beatae pariatur eaque excepturi, molestias eligendi ab sapiente similique ipsum voluptatem maiores cum, modi distinctio! Ipsa soluta voluptatem quo obcaecati officiis,</p>
+    
+  
+      <div class="container mb-5">
+          <h2 class="py-3 text-center">image & vidio</h2>
+          <div class="row py-3">
+              <div class="col">
+
+                  <img src="ne5.jpg" class="img-fluid img-thumbnail" alt="">
+              </div>
+              
+              <p class="px-2">
+                
+                  Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus soluta, quisquam rerum reprehenderit officia animi. Odio error ipsa consectetur, magnam est perspiciatis quibusdam eius voluptas nostrum voluptatem? Impedit, aperiam quidem! amet consectetur adipisicing elit. Voluptate cum ea repudiandae impedit officiis enim provident velit, earum esse? Accusamus!
+                
+                </p>
+            
+
+          </div>
+          <div class="row">
+              <div class="col">
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FftcqHHIkXY" frameborder="0"></iframe>
+                  </div>
+                  <p class="px-2">
+                
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae nam facere quasi veniam officia minus. Officia harum omnis, fugit beatae at reiciendis consequatur corporis repudiandae eaque illo a aut saepe. Expedita doloribus consequuntur reprehenderit, officiis doloremque dolorem, quis excepturi labore cum harum dicta possimus nesciunt, quisquam quasi? Voluptates, ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus soluta, quisquam rerum reprehenderit officia animi. Odio error ipsa consectetur, magnam est perspiciatis quibusdam eius voluptas nostrum voluptatem? Impedit, aperiam quidem! amet consectetur adipisicing elit. Voluptate cum ea repudiandae impedit officiis enim provident velit, earum esse? Accusamus!
+                  </p>
+              </div>
+          </div>
+      </div>
+    
+ 
+      </div>
+        <div class="modal-footer">
+         <button class="btn btn-danger" data-dismiss="modal">
+            close
+         </button>
+         <button class="btn btn-primary" >
+             save
+         </button>
+          </div>
+          </div>
+           </div>
+
+            </div>
+
+           </div>
+
+           </div>
+           </div>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
+
